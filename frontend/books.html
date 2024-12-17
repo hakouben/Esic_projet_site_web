@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Esic_projet_site_web/frontend/Styles/booksStylePage.css"
+    />
+    <title>Bibliothèque - Livres</title>
+
+    <link rel="stylesheet" href="Styles/booksStylePage.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">e-book</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Accueil</a></li>
+        <li><a href="books.html">Livres</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="#" id="logout">Déconnexion</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Nos Livres</h1>
+      <div class="search-filter">
+        <input
+          type="text"
+          id="search-books"
+          placeholder="Rechercher un livre..."
+        />
+        <select id="category-filter">
+          <option value="">Toutes les catégories</option>
+          <!-- Les catégories seront ajoutées dynamiquement -->
+        </select>
+      </div>
+
+      <div id="books-grid" class="books-grid">
+        <!-- Les livres seront générés dynamiquement ici -->
+      </div>
+    </div>
+
+    <!-- Modal pour les détails du livre -->
+    <div id="book-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="book-details">
+          <!-- Détails du livre seront chargés ici -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/books.js"></script>
+  </body>
+</html>

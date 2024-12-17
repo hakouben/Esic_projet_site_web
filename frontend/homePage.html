@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Esic_projet_site_web/frontend/Styles/main.css"
+    />
+    <title>Accueil - e-book</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">e-book</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Accueil</a></li>
+        <li><a href="books.html">Livres</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="#" id="logout">Déconnexion</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Nos Utilisateurs</h1>
+      <div id="user-cards" class="user-grid">
+        <!-- Les cartes d'utilisateurs seront générées dynamiquement ici -->
+      </div>
+    </div>
+
+    <div id="user-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="user-details">
+          <!-- Détails de l'utilisateur seront chargés ici -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
